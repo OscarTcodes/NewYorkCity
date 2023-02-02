@@ -1,0 +1,315 @@
+/* Overall site style */
+
+html,
+body {
+    margin: 0;
+    background-color: #D3D0CBFF;
+}
+
+p {
+    color: rgb(49, 100, 2);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+
+
+/* styling for nav */
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #D3D0CBFF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown button {
+    border: none;
+    font-family: 'Prata', serif;
+    background: none;
+    font-size: 32px;
+    padding: 0px 30px 0px 30px;
+    color: #2E5266FF;
+    text-decoration: none;
+}
+
+.topCentered {
+    display: flex;
+    font-family: 'Prata', serif;
+    color: rgb(2, 62, 100);
+    background-color: #D3D0CBFF;
+}
+
+.topCentered a {
+    font-size: 32px;
+    padding: 0px 30px 0px 30px;
+    color: #2E5266FF;
+    text-decoration: none;
+}
+
+
+/* nav img */
+
+.indexImg {
+    opacity: .8;
+    width: 100%;
+    height: 1000px;
+}
+
+.navContainer {
+    position: relative;
+    text-align: center;
+}
+
+.topCentered {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titleofPage {
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    font-size: 40px;
+    background-color: #D3D0CBFF;
+    color: #2E5266FF;
+    font-family: 'Prata', serif;
+}
+
+.container div {
+    width: 90%;
+    padding: 0px 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(2, 62, 100);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Zen Antique', serif;
+}
+
+
+/* style for Grading section in index.html */
+
+section img {
+    height: 100%;
+    width: 90%;
+}
+
+#proj {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.grading li {
+    list-style-type: none;
+    background-color: #8D8741;
+}
+
+.grading a {
+    color: white;
+    text-decoration: none;
+}
+
+.proj-boxes {
+    padding: 0px;
+    font-size: 30px;
+    color: rgb(2, 62, 100);
+    width: 350px;
+    font-family: 'Zen Antique', serif;
+}
+
+.proj-boxes li a {
+    transition: .6s ease-in;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.proj-boxes li a:hover {
+    box-shadow: 10px 10px 0px #bc986a;
+    top: -5px;
+    left: -5px;
+}
+
+
+/* Styling for Queens park file */
+
+.rows {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rows img {
+    width: 40%;
+}
+
+.intro {
+    text-align: center;
+}
+
+.textbox {
+    margin: auto;
+}
+
+.rows h1 {
+    text-align: center;
+    margin: 90px;
+}
+
+
+/* Styling for Queens Muesums file */
+
+.item1 {
+    grid-area: title;
+}
+
+.item2 {
+    grid-area: section;
+}
+
+.item3 {
+    grid-area: para;
+}
+
+.item4 {
+    grid-area: image1;
+}
+
+.item5 {
+    grid-area: image2;
+}
+
+.item6 {
+    grid-area: para2;
+}
+
+.grid-container {
+    color: rgb(2, 62, 100);
+    text-align: center;
+    font-size: 24px;
+    display: grid;
+    grid-template-areas: 'title title' 'section para' 'image1 image2' 'para2 para2';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* CSS FOR THE FORM */
+form{
+    color: rgb(49, 100, 2);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+#fname,
+#textarea,
+select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submitbtn {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#imgheader{
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+}
+#submitbtn:hover {
+    background-color: #45a049;
+}
+
+/* etc */
+
+footer {
+    text-align: center;
+}
+
+
+
+
+/* helps reduce the size of the font */
+
+@media only screen and (max-width: 1200px) {
+    .topCentered a {
+        font-size: 12px;
+        padding: 0px 15px 0px 15px;
+    }
+    .dropdown button {
+        font-size: 12px;
+        padding: 0px 15px 0px 15px;
+    }
+    .titleofPage {
+        position: absolute;
+        top: 45%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        font-size: 20px;
+        background-color: #D3D0CBFF;
+        color: #2E5266FF;
+        font-family: 'Prata', serif;
+    }
+    .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .proj-boxes {
+        font-size: 12px;
+        width: 200px;
+    }
+    .container p {
+        font-size: 20px;
+    }
+    #proj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grading {
+        font-size: 20px;
+        width: 100%;
+        padding: initial;
+    }
+    .grid-container,
+    .rows {
+        display: flex;
+        flex-direction: column;
+    }
+    .rows img {
+        width: 100%;
+    }
+    #indexImg {
+        height: 100%;
+    }
+}
